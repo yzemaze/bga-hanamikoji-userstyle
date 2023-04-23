@@ -1,3 +1,14 @@
+/* ==UserStyle==
+@name         BGA Hanamikoji
+@description  CSS for Hanamikoji on BGA reducing whitespace and fixing waiting_card_zone
+@namespace    github.com/yzemaze/bga-hanamikoji-userstyle/
+@supportURL   https://github.com/yzemaze/bga-hanamikoji-userstyle
+@version      0.2
+@author       yzemaze
+@license      GPLv3
+==/UserStyle== */
+
+@-moz-document regexp("https://boardgamearena.com/.*/hanamikoji/.*"), regexp("https://boardgamearena.com/archive/replay/.*") {
 /*
 CSS for Hanamikoji on BGA
 
@@ -7,6 +18,7 @@ It should work fine on windows/screens 1280px or wider and with "Player area pos
 
 test-game: https://boardgamearena.com/archive/replay/230419-1000/?table=369789824&player=1259869&comments=1259869;
 (choose 1 out of 3 as 1st play from opponent)
+Remove regexp("https://boardgamearena.com/archive/replay/.*") from moz-doc after testing.
 
 screenshot: https://github.com/yzemaze/bga-hanamikoji-userstyle/blob/main/BGA_Hanamikoji_CSS.png
 (I do use grey background everywhere on BGA.)
@@ -44,4 +56,6 @@ screenshot: https://github.com/yzemaze/bga-hanamikoji-userstyle/blob/main/BGA_Ha
 /* #action_wrap_playerID */
 #opponent_block > div:nth-of-type(2)  {
     margin: 5px auto auto 10px;
+}
+
 }
