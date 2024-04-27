@@ -1,5 +1,5 @@
 # bga-hanamikoji-userstyle
-Userstyle/CSS for Hanamikoji on BGA.
+Userstyle for Hanamikoji on BGA.
 
 ## Features
 - reduced whitespace/margins (cf. <a href="https://boardgamearena.com/bug?id=86955">bug 86955</a>)
@@ -13,13 +13,13 @@ It should work fine on windows/screens 1280px or wider and with "Player area pos
 
 <a href="https://boardgamearena.com/archive/replay/230419-1000/?table=369789824&player=1259869&comments=1259869;">test-game</a> (choose 1 out of 3 as 1st play from opponent)
 
-Remove `regexp("https://boardgamearena.com/archive/replay/.*")` from moz-doc after testing.
-
 ## Screenshots
-… with exactly the same dimensions. (Please just ignore the grey background. I use it everywhere on BGA.)
+… with exactly the same dimensions:
 
+![screenshot-BGA-Hanamikoji](/img/screenshot-BGA-Hanamikoji.png?raw=true)
 Beta published on BGA 2023/04/23
-![screenshot_beta](/BGA_Hanamikoji.png?raw=true)
 
-With my .user.styl activated:
-![screenshot_userstyle](/BGA_Hanamikoji_CSS.png?raw=true)
+![screenshot-userstyle-Hanamikoji](/img/screenshot-userstyle-Hanamikoji.png?raw=true)
+.user.styl activated
+
+(Please just ignore the <a href="https://github.com/yzemaze/bga-scripts/">plain background</a>. It’s just my default setting.)
