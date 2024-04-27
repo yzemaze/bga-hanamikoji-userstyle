@@ -1,7 +1,7 @@
 /* ==UserStyle==
-@name						BGA Hanamikoji
-@description		CSS for Hanamikoji on BGA reducing whitespace and fixing waiting_card_zone
-@version				0.3
+@name						BGA Hanamikoji userstyle
+@description		Userstyle for Hanamikoji on BGA reducing whitespace and fixing waiting_card_zone by pinning it to the top left.
+@version				0.4
 @author					yzemaze
 @namespace			github.com/yzemaze/
 @supportURL			https://github.com/yzemaze/bga-hanamikoji-userstyle/issues
@@ -16,20 +16,21 @@
 		#waiting_card_zone
 			position absolute
 			display inline
-		/* #mycard_wrap_playerID */
 		#this_player_block > div:nth-of-type(2)
+			/* #mycard_wrap_playerID */
 			display flex
 			margin auto auto auto 260px
-		#mynothand_wrap, #myreserved_wrap, #mydiscarded_wrap
-			width fit-content
-		#myhand_wrap, #mynothand_wrap
-			margin 5px 15px
+			#mynothand_wrap, #myreserved_wrap, #mydiscarded_wrap
+				width fit-content
+				margin 0 5px
+			#myhand_wrap, #mynothand_wrap
+				margin 5px 15px
+		#opponent_block
+			> div:nth-of-type(1)
+				/* #card_wrap_playerID */
+				margin -15px 10px auto auto
+			> div:nth-of-type(2)
+				/* #action_wrap_playerID */
+				margin 5px auto auto 10px
 		.geisha_card_wrap
-			height 145px
-			margin 5px auto
-		/* #card_wrap_playerID */
-		#opponent_block > div:nth-of-type(1)
-			 margin -15px 10px auto auto
-		/* #action_wrap_playerID */
-		#opponent_block > div:nth-of-type(2)
-			margin 5px auto auto 10px
+			height 140px
